@@ -9,3 +9,5 @@ PS1='[\u@\h \W]\$ '
 alias xi='sudo xbps-install'
 alias q='xbps-query -Rs'
 alias shutdown='sudo shutdown -h now'
+
+colorscript random

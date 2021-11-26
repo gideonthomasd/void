@@ -68,7 +68,7 @@ ctrl + F1
 ctrl + F2
 	lxterminal -e 'curl wttr.in/Caerphilly && read'
 ctrl + F3
-	pamac-manager
+	lxterminal -e 'sudo xbps-install -Su'
 ctrl + F4
 	mocp -G
 ctrl + F5
@@ -187,7 +187,8 @@ super + Escape
 #	bspc node -v {-20 0,0 20,0 -20,20 0}
 # MINE #############################################
 ~button2
-	xfce4-appfinder
+	jgmenu_run
+#xfce4-appfinder
 #jgmenu_run
 #	~/dwm-6.2d/killjgmenu
 	

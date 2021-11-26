@@ -162,28 +162,28 @@ cd ..
 
 
 ######## Install xmonad ##########################
-mkdir -p ~/.xmonad
-mkdir -p ~/.config/xmobar
+#mkdir -p ~/.xmonad
+#mkdir -p ~/.config/xmobar
 
-cd xmonad
-chmod +x autostart.sh
+#cd xmonad
+#chmod +x autostart.sh
 #chmod +x testwallpaper
-chmod +x xmonad.hs
-cd ..
+#chmod +x xmonad.hs
+#cd ..
 
-cd xmobar
-chmod +x xmobarrc
-chmod +x *.sh
+#cd xmobar
+#chmod +x xmobarrc
+#chmod +x *.sh
 
-cd ..
+#cd ..
 
-cd xmonad
-cp -r * ~/.xmonad
-cd ..
+#cd xmonad
+#cp -r * ~/.xmonad
+#cd ..
 
-cd xmobar
-cp -r * ~/.config/xmobar
-cd ..
+#cd xmobar
+#cp -r * ~/.config/xmobar
+#cd ..
 
 ######## Install DWM ##############################
 
@@ -214,6 +214,21 @@ cd ..
 sudo cp dwm.desktop /usr/share/xsessions/dwm.desktop
 sudo cp autostart.sh ~/.local/share/dwm
 sudo cp sxhkdrc ~/.local/share/dwm
+cp powermenu.sh ~/powermenu.sh
+
+mkdir -p ~/.config/plank
+cd plank
+cp -r * ~/.config/plank
+cd ..
+
+git clone https://gitlab.com/dwt1/shell-color-scripts.git
+cd shell-color-scripts
+#rm -rf /opt/shell-color-scripts
+sudo mkdir -p /opt/shell-color-scripts/colorscripts
+sudo cp -rf colorscripts/* /opt/shell-color-scripts/colorscripts
+sudo cp colorscript.sh /usr/bin/colorscript
+cd ..
+
 
 ##############################Install bumblebee for i3########################
 #cd ~/.config/i3/bumblebee-status
@@ -233,12 +248,13 @@ sudo make clean install
 cd ~/bspwm-arco/i3/bumblebee-status/myfiles
 #sudo cp -r * /usr/share/bumblebee-status/bumblebee_status/modules/contrib
 sudo cp -r * /usr/lib/python3.10/site-packages/bumblebee_status/modules/contrib
-xmonad --recompile
+#xmonad --recompile
 
 #cd ~/.config/leftwm/themes
 #ln -s eden current
 
 #sudo systemctl enable bluetooth
+sudo ln -s etc/sv/cupsd /var/service/
 
 echo "SNAP: For menu entry copy /var/lib/snapd/desktop/applications to /home/phil/.local/share/applications"
 echo "SNAP : From sxhkd do 'snap run brave' instead of just 'brave' "
