@@ -36,16 +36,16 @@ then
     pkill bspwm
 elif [ "$selected_option" == "$shutdown" ]
 then
-	shutdown
+	loginctl poweroff
 	#SEE SUDOERS and .bashrc
     ###systemctl poweroff
 elif [ "$selected_option" == "$reboot" ]
 then
-    systemctl reboot
+    loginctl reboot
 elif [ "$selected_option" == "$sleep" ]
 then
     amixer set Master mute
-    systemctl suspend
+    loginctl suspend
 else
     echo " "
 fi

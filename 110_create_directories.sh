@@ -245,7 +245,7 @@ cd ~/st-transparency-scrollback
 sudo make clean install
 
 #########################Install bumblebee-status files - mine
-cd ~/bspwm-arco/i3/bumblebee-status/myfiles
+cd ~/void/i3/bumblebee-status/myfiles
 #sudo cp -r * /usr/share/bumblebee-status/bumblebee_status/modules/contrib
 sudo cp -r * /usr/lib/python3.10/site-packages/bumblebee_status/modules/contrib
 #xmonad --recompile
@@ -254,7 +254,7 @@ sudo cp -r * /usr/lib/python3.10/site-packages/bumblebee_status/modules/contrib
 #ln -s eden current
 
 #sudo systemctl enable bluetooth
-sudo ln -s etc/sv/cupsd /var/service/
+sudo ln -s /etc/sv/cupsd /var/service/
 
 echo "SNAP: For menu entry copy /var/lib/snapd/desktop/applications to /home/phil/.local/share/applications"
 echo "SNAP : From sxhkd do 'snap run brave' instead of just 'brave' "
