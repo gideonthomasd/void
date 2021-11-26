@@ -175,7 +175,7 @@ super + Escape
 #	bspc node -v {-20 0,0 20,0 -20,20 0}
 # MINE #############################################
 ~button2
-	~/jgmenu_create.sh
+	jgmenu_run
 #jgmenu_run
 #	~/dwm-6.2d/killjgmenu
 	
