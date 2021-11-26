@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Noto Sans Mono:pixelsize=16:antialias=true:autohint=true";
+static char *font = "Noto Sans Mono:pixelsize=18:antialias=true:autohint=true";
 static int borderpx = 30;
 
 /*
@@ -83,7 +83,7 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-unsigned int alpha = 0xF8; /* 0xee; */
+unsigned int alpha = 0xbb; /* 0xee; */
 
 /* Terminal colors (16 first used in escape sequence) 
 static const char *colorname[] = {

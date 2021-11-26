@@ -35,11 +35,11 @@ current=$(date +%s)
 
 passed=$[ current-oldtime ]
 icon5="  "
-if [ $passed -gt 300 ]
+if [ $passed -gt 600 ]
 then
 weathernow=$(curl wttr.in/Caerphilly?format="%l+%C+%f" 2>/dev/null | cut -d' ' -f2-)
 #mailcount=$(curl -u $username:$password  --silent "https://mail.google.com/mail/feed/atom" | grep -oPm1 "(?<=<fullcount>)[^<]+")
-actualupdates=$(checkupdates | wc -l)
+actualupdates=$(xbps-install -nuM | wc -l)
 
 date +%s > /home/phil/slstatus/time
 
