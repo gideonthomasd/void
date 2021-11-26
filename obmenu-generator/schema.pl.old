@@ -28,11 +28,11 @@ require "$ENV{HOME}/.config/obmenu-generator/config.pl";
 my $editor = $CONFIG->{editor};
 
 our $SCHEMA = [
-	{sep => "Void Linux"},
+	{sep => "ArcoLinux"},
     #          COMMAND                 LABEL                ICON
-    {item => ['lxterminal',                                 'Terminal',          'terminal']},
-    {item => ['pcmanfm',                                      'File Manager',      'file-manager']},
-    {item => ['firefox ',                                      'Web Browser',       'webbrowser-app']},
+    {item => ['termite',                                 'Terminal',          'terminal']},
+    {item => ['thunar',                                      'File Manager',      'file-manager']},
+    {item => ['brave ',                                      'Web Browser',       'webbrowser-app']},
     {item => ['geany',                                                              'Text Editor',       'geany']},
     {sep => undef},
 
@@ -135,6 +135,6 @@ our $SCHEMA = [
     #{item => ['xscreensaver-command -lock', 'Lock', 'system-lock-screen']},
     {sep => undef},
     {item => ['arcolinux-logout',              'Lock Screen',                       'lock']},
-    {item => ['~/powermenu.sh',              'Exit Openbox',                      'exit']},
+    {item => ['arcolinux-logout',              'Exit Openbox',                      'exit']},
 
 ]
