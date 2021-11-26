@@ -12,7 +12,7 @@
 
 # Set background image
 xcompmgr &
-~/.config/bspwm/testwallpaper &
+#~/.config/bspwm/testwallpaper &
 
 tint2 &
 #$HOME/.config/polybar/launch.sh &
