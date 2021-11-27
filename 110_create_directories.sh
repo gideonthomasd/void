@@ -233,6 +233,10 @@ sudo cp -rf colorscripts/* /opt/shell-color-scripts/colorscripts
 sudo cp colorscript.sh /usr/bin/colorscript
 cd ..
 
+cd vdojo
+sudo cp -r * /usr/share/lxdm/themes/vdojo
+cd ..
+sudo cp lxdm.conf /etc/lxdm/lxdm.conf
 
 ##############################Install bumblebee for i3########################
 #cd ~/.config/i3/bumblebee-status
