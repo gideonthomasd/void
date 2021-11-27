@@ -160,8 +160,8 @@ cd i3blocks
 cp -r * ~/.config/i3blocks
 cd ..
 
-cd xfce
-cp -r * ~/.config/xfce
+cd xfce4
+cp -r * ~/.config/xfce4
 cd ..
 
 
