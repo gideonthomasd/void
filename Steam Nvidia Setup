@@ -10,3 +10,19 @@ To install steam:
 
 Then put inside .bashrc:
 LD_PRELOAD='/usr/$LIB/libstdc++.so.6 /usr/$LIB/libgcc_s.so.1 /usr/$LIB/libxcb.so.1' steam
+
+FIREFOX PASSWORDS:
+Go to about:config
+signon.management.page.fileImport.enabled false ->> TRUE
+
+Go to Passwords (middle of screen)
+Go to 3 dots
+Import
+
+FIREFOX BROWSER:
+Go to Bookmarks
+Go to Manage Bookmarks at the bottom
+Import and Backup (at the top)
+
+From Bookmarks Menu -- Bookmarks bar -- Imported -- get Homey
+Copy into Bookmarks Toolbar
