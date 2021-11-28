@@ -1,0 +1,12 @@
+To install nvidia:
+# xbps-install nvidia nvidia-dkms nvidia-libs nvidia-libs-32bit
+
+
+To install steam:
+1) Install flatpak OR
+
+2) # xbps-install libgcc-32bit libstdc++-32bit libdrm-32bit libglvnd-32bit
+# xbps-install -S mono
+
+Then put inside .bashrc:
+LD_PRELOAD='/usr/$LIB/libstdc++.so.6 /usr/$LIB/libgcc_s.so.1 /usr/$LIB/libxcb.so.1' steam
