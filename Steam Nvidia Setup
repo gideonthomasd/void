@@ -10,6 +10,7 @@ To install steam:
 
 Then put inside .bashrc:
 LD_PRELOAD='/usr/$LIB/libstdc++.so.6 /usr/$LIB/libgcc_s.so.1 /usr/$LIB/libxcb.so.1' steam
+(Can remove afterwards)
 
 FIREFOX PASSWORDS:
 Go to about:config
