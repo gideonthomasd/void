@@ -27,3 +27,8 @@ Import and Backup (at the top)
 
 From Bookmarks Menu -- Bookmarks bar -- Imported -- get Homey
 Copy into Bookmarks Toolbar
+
+
+DUAL BOOT WINDOWS
+In /etc/default/grub
+put in 'GRUB_DISABLE_OS_PROBER=false' at end to get windows.  Then do '# grub-mkconfig -o /boot/grub/grub.cfg'
