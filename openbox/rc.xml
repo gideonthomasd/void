@@ -314,11 +314,7 @@
       <action name="FocusToBottom"/>
       <action name="Unfocus"/>
     </keybind>
-    <keybind key="A-space">
-      <action name="ShowMenu">
-        <menu>client-menu</menu>
-      </action>
-    </keybind>
+    
     <keybind key="XF86AudioStop">
       <action name="Execute">
         <command>playerctl pause</command>
@@ -385,7 +381,7 @@
     </keybind>
     <keybind key="A-space">
       <action name="Execute">
-        <command>~/fehRandom.sh</command>
+        <command>./Randomwall.sh</command>
       </action>
     </keybind>
     
@@ -558,19 +554,15 @@
         <command>variety -p</command>
       </action>
     </keybind>
-    <keybind key="A-Left">
-      <action name="Execute">
-        <command>variety -p</command>
-      </action>
-    </keybind>
+   
     <keybind key="A-n">
       <action name="Execute">
         <command>variety -n</command>
       </action>
     </keybind>
     <keybind key="A-Right">
-      <action name="Execute">
-        <command>variety -n</command>
+      <action name="DesktopRight">
+        <wrap>no</wrap>
       </action>
     </keybind>
     <keybind key="A-Down">
@@ -578,9 +570,9 @@
         <command>variety --resume</command>
       </action>
     </keybind>
-    <keybind key="A-Up">
-      <action name="Execute">
-        <command>variety --pause</command>
+    <keybind key="A-Left">
+      <action name="DesktopLeft">
+        <wrap>no</wrap>
       </action>
     </keybind>
     <keybind key="S-W-q">
@@ -661,7 +653,7 @@
     </keybind>
     <keybind key="F12">
       <action name="Execute">
-        <command>thunar</command>
+        <command>pcmanfm</command>
       </action>
     </keybind>
     <keybind key="F2">
