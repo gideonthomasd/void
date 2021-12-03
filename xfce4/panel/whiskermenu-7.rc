@@ -1,5 +1,5 @@
 favorites=xfce4-web-browser.desktop,pcmanfm.desktop,xfce4-terminal-emulator.desktop,timeshift-gtk.desktop,xfce4-file-manager.desktop
-recent=xfce-settings-manager.desktop,xfce4-settings-editor.desktop,pcmanfm.desktop,xfce4-file-manager.desktop
+recent=xfce-settings-manager.desktop,com.valvesoftware.Steam.desktop,Bloons TD 6.desktop,xfce4-terminal-emulator.desktop,xfce-session-settings.desktop,xfce4-settings-editor.desktop,pcmanfm.desktop,xfce4-file-manager.desktop
 button-icon=multimedia-video-player
 button-single-row=false
 show-button-title=false
